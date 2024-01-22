@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dad App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Seymour+One&display=swap" rel="stylesheet">       <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <section id="view-logged-out">
+        <div class="container">
+            <img src="assets/dad_app.png">
+            <h1>Dad App</h1>
+            <button id="google-button">Continue with Google</button>
+        </div>
+    </section>
+    <section id="view-logged-in">
+        <div class="container">
+            <h1>Dad App</h1>
+            <div class="menu">
+                <h3 id="sign-out-button">Sign out</h3>
+            </div>
+            <input id="question-input" type="text" placeholder="Why is the sky blue?">
+            <button id="add-question-button">Add Question</button>
+            <div id="questions">
+            </div>
+        </div>
+    </section>
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>

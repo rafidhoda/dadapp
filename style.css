@@ -1,0 +1,140 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+    background-color: #BDDEE4;
+    color: #1a4951;
+    font-family: "Roboto";
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    width: 100%;
+}
+
+.admin-mode {
+    background-color: #1d292b;
+}
+
+h1, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    text-align: center;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.question-container {
+    display: flex;
+    width: 100%;
+    column-gap: 10px;
+}
+
+h3:hover {
+    text-decoration: underline;
+}
+
+#view-logged-out {
+    display: none;
+}
+
+#view-logged-in {
+    display: none;
+}
+
+.container {
+    max-width: 320px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 100%;
+}
+
+input {
+    padding: 10px;
+    font-size: 18px;
+    background-color: #76c4d0;
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 5px;
+    color: #FFF2FE;
+    font-family: "Roboto";
+}
+
+button {
+    color: #1a4951;
+    background-color: #66AFBB;
+    font-size: 18px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 5px;
+    padding: 7px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1a4951;
+    color: #BDDEE4;
+}
+
+img {
+    width: 200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: "Seymour One";
+    text-align: center;
+}
+
+#questions {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    width: 100%;
+}
+
+.delete-button {
+    width: 50px;
+    flex-grow: 1;
+}
+
+.question {
+    background-color: #4299a9;
+    padding: 15px;
+    font-size: 18px;
+    color: #BDDEE4;
+    border-radius: 5px;
+    text-align: left;
+    user-select: none;
+    cursor: pointer;
+    width: 260px;
+}
+
+.question:hover {
+    cursor: pointer;
+}
+
+.selected {
+    background-color: #1a4951;
+    color: #367b87;
+}

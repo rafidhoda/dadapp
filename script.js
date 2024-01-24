@@ -55,15 +55,22 @@ addQuestionButton.onclick = () => {
     
     const questionValue = questionInput.value
 
-    const questionObject = {
-        body: questionValue,
-        isQuestionAsked: false,
-        isQuestionPrivate: true
+    if (questionValue) {
+        const questionObject = {
+            body: questionValue,
+            isQuestionAsked: false,
+            isQuestionPrivate: true
+        }
+    
+        push(referenceInDB, questionObject)
+    
+        questionInput.value = ""
+    } else {
+        console.log("Please enter a value")
+        questionInput.style.backgroundColor = "#b32e65"
     }
 
-    push(referenceInDB, questionObject)
-
-    questionInput.value = ""
+    
 }
 
 function fetchAllQuestions() {
